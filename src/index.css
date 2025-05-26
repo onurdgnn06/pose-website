@@ -974,4 +974,137 @@ section,
   transform: scale(1.12) rotate(-6deg);
 }
 
+/* Mobil uyumluluk iyileştirmeleri */
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    padding: 0.7rem 0.2rem;
+    gap: 0.5rem;
+    border-radius: 0.7rem;
+    top: 4px;
+  }
+  .navbar > .container {
+    flex-direction: column;
+    gap: 0.7rem;
+    padding: 0 0.2rem;
+  }
+  .navbar-links {
+    flex-direction: column;
+    gap: 0.7rem;
+    width: 100%;
+    align-items: flex-start;
+  }
+  .navbar-links a {
+    font-size: 1rem;
+    padding: 0.3rem 0;
+  }
+  .hero {
+    min-height: unset;
+    padding: 2.5rem 0 1.5rem 0;
+  }
+  .hero h1 {
+    font-size: 2.1rem;
+    text-align: left;
+  }
+  .hero p {
+    font-size: 1rem;
+    margin-bottom: 1.2rem;
+  }
+  .hero-buttons {
+    flex-direction: column;
+    gap: 0.7rem;
+    width: 100%;
+  }
+  .glass-btn, .modern-btn {
+    width: 100%;
+    font-size: 1rem;
+    padding: 0.7em 1.1em;
+  }
+  .features {
+    padding: 2rem 0;
+  }
+  .features-grid {
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+  }
+  .feature-card {
+    padding: 1rem;
+    font-size: 0.98rem;
+  }
+  .games {
+    padding: 2rem 0;
+  }
+  .games-grid {
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+  }
+  .game-card {
+    aspect-ratio: 16/10;
+  }
+  .faq {
+    padding: 2rem 0;
+  }
+  .discord {
+    padding: 2rem 0;
+  }
+  .discord-content {
+    flex-direction: column;
+    gap: 1.2rem;
+    align-items: stretch;
+  }
+  .discord-image-group {
+    flex-direction: row;
+    gap: 0.5rem;
+    min-width: unset;
+    min-height: unset;
+  }
+  .discord-image-item {
+    width: 70px !important;
+    height: 50px !important;
+  }
+  .login-popover-content {
+    min-width: unset;
+    width: 95vw;
+    padding: 1.2rem 0.5rem 1rem 0.5rem;
+  }
+  .login-title {
+    font-size: 1.1rem;
+  }
+  .login-input {
+    font-size: 0.98rem;
+    padding: 0.7rem 0.7rem;
+  }
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  .footer-logo {
+    max-width: 110px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    padding: 0.3rem 0.1rem;
+    border-radius: 0.4rem;
+  }
+  .hero h1 {
+    font-size: 1.3rem;
+  }
+  .glass-btn, .modern-btn {
+    font-size: 0.95rem;
+    padding: 0.6em 0.7em;
+  }
+  .login-popover-content {
+    width: 99vw;
+    padding: 0.7rem 0.2rem 0.7rem 0.2rem;
+  }
+  .login-title {
+    font-size: 1rem;
+  }
+  .footer-content {
+    gap: 0.5rem;
+  }
+}
+
 
